@@ -1,0 +1,283 @@
+//creates the HashTable
+function HashTable(obj)
+{
+	this.length = 0;
+	this.items = {};
+	for (var p in obj)
+	{
+		if(obj.hasOwnProperty(p))
+		{
+			this.items[p] = obj[p];
+			this.length++;
+		}
+	}
+
+	this.setItem = function(key, value)
+	{
+		var previous = undefined; 
+		// undefined is a variable has been declared but has not yet been assigned a value
+		if (this.hasItem(key))
+		{
+			previous = this.items[key];
+		} else { this.length++; }
+		this.items[key] = value; 
+		return previous; 
+	}
+
+	this.getItem = function(key)
+	{	
+		return this.hasItem(key) ? this.items[key] : undefined;
+	}
+
+	this.hasItem = function(key)
+	{	
+		return this.items.hasOwnProperty(key);
+	}
+
+	this.removeItem = function(key)
+	{
+		if (this.hasItem(key))
+		{
+			previous = this.items[key];
+			this.length--;
+			delete this.items[key];
+		} else { return undefined}
+	}	
+
+	this.key = function ()
+	{
+		var keys = [];
+		for (var k in this.items)
+		{
+			if (this.hasItem(k))
+			{
+				keys.push(k);
+			}
+		}
+		return keys;
+	}
+
+	this.values = function()
+	{
+		var values = [];
+		for (var k in this.items)
+		{
+			if (this.hasItem(k))
+			{
+				fn(k,this.items[k]);
+			}
+		}
+	}
+
+	this.each = function(fn)
+	{
+		for (var k in this.items)
+		{
+			if (this.hasItem(k))
+			{
+				fn(k, this.items[k]);
+			}
+		}
+	}
+
+	this.clear = function()
+	{
+		this.items = {}
+		this.length = 0;
+	}
+}
+/*
+Alabama - AL
+Alaska - AK
+Arixona - AZ
+Arkansas - AR
+California - CA
+Colorado - CO
+Connecticut - CT 
+Delaware - DE
+Florida - FL
+Georgia - GA
+Hawaii - HI
+Idaho - ID
+Illinois - IL 
+Indiana - IN
+Iowa - IA
+Kansas - KS
+Kentucky - KY
+Louisiana - LA
+Maine - ME
+Maryland - MD 
+Massachusetts - MA 
+Michigan - MI
+Minnesota - MN
+Mississippi - MS
+Missour - MO
+Montana - MT
+Nebraska - NE
+Nevada - NV
+New Hampshire - NH 
+New Jersey - NJ
+New Mexico - NM
+New York - NY
+North Calofornia - NC 
+North Dakota - ND
+Ohio - OH
+Oklahoma - OK 
+Oregon - OR
+Pennsylvania - PA
+Rhode Island - RI
+South Carolina - SC
+South Dakota - SD
+Tennessee - TN
+Texas - TX
+Utah - UT
+Vermont - VT 
+Virginia - VA
+Washington - WA
+West Virginia - WV 
+Wisconsin - WI
+Wyoming - WY
+*/
+var h = new HashTable(
+	{
+		AL: 47, 
+		AK: 23, 
+		AZ: 22, 
+		AR: 50,
+		CA: 2,
+		//5
+		
+		CO: 13, 
+		CT: 15, 
+		DE: 30, 
+		FL: 16, 
+		GA: 27, 
+		//10
+		HI: 1, 
+		ID: 31, 
+		IL: 7, 
+		IN: 40, 
+		IA: 12, 
+		//15
+		KS: 21,
+		KY: 46,
+		LA: 43,
+		ME: 39, 
+		MD: 10, 
+		//20
+		MA: 20,
+		MI: 36,
+		MN: 5,
+		MS: 42,
+		MO: 41,
+		//25
+		MT: 29,
+		NE: 4, 
+		NV: 32, 
+		NH: 18, 
+		NJ: 3, 
+		//30
+		NM: 34, 
+		NY: 17,
+		NC: 26,
+		ND: 9,
+		OH: 38,
+		//35
+		OK: 48,
+		OR: 44,
+		PA: 28, 
+		RI: 35,
+		SC: 33,
+		//40
+		SD: 6,
+		TN: 45,
+		TX: 14, 
+		UT: 24,
+		VT: 19,
+		//45
+		VA: 8,
+		WA: 25,
+		WV: 49,
+		WI: 11,
+		WY: 37,
+		//50
+		
+	});
+
+//print the states
+//showing the items
+for (var k in h.items) 
+{
+    if (h.hasItem(k)) 
+    {
+        console.log('state: ' + k + ' | Emotional & Physical Well-Being: ' + h.items[k]);
+    }
+}
+console.log('');
+
+console.log('original length: ' + h.length );
+
+
+//showing the entries individually
+//not using the hasOwnProperty case
+/*
+h.each(function(k, v) 
+{ 
+	console.log('key is: ' + k + ', value is: ' + v);
+});
+*/
+/*OUTPUTS!!!
+state: AL | Emotional & Physical Well-Being: 47
+state: AK | Emotional & Physical Well-Being: 23
+state: AZ | Emotional & Physical Well-Being: 22
+state: AR | Emotional & Physical Well-Being: 50
+state: CA | Emotional & Physical Well-Being: 2
+state: CO | Emotional & Physical Well-Being: 13
+state: CT | Emotional & Physical Well-Being: 15
+state: DE | Emotional & Physical Well-Being: 30
+state: FL | Emotional & Physical Well-Being: 16
+state: GA | Emotional & Physical Well-Being: 27
+state: HI | Emotional & Physical Well-Being: 1
+state: ID | Emotional & Physical Well-Being: 31
+state: IL | Emotional & Physical Well-Being: 7
+state: IN | Emotional & Physical Well-Being: 40
+state: IA | Emotional & Physical Well-Being: 12
+state: KS | Emotional & Physical Well-Being: 21
+state: KY | Emotional & Physical Well-Being: 46
+state: LA | Emotional & Physical Well-Being: 43
+state: ME | Emotional & Physical Well-Being: 39
+state: MD | Emotional & Physical Well-Being: 10
+state: MA | Emotional & Physical Well-Being: 20
+state: MI | Emotional & Physical Well-Being: 36
+state: MN | Emotional & Physical Well-Being: 5
+state: MS | Emotional & Physical Well-Being: 42
+state: MO | Emotional & Physical Well-Being: 41
+state: MT | Emotional & Physical Well-Being: 29
+state: NE | Emotional & Physical Well-Being: 4
+state: NV | Emotional & Physical Well-Being: 32
+state: NH | Emotional & Physical Well-Being: 18
+state: NJ | Emotional & Physical Well-Being: 3
+state: NM | Emotional & Physical Well-Being: 34
+state: NY | Emotional & Physical Well-Being: 17
+state: NC | Emotional & Physical Well-Being: 26
+state: ND | Emotional & Physical Well-Being: 9
+state: OH | Emotional & Physical Well-Being: 38
+state: OK | Emotional & Physical Well-Being: 48
+state: OR | Emotional & Physical Well-Being: 44
+state: PA | Emotional & Physical Well-Being: 28
+state: RI | Emotional & Physical Well-Being: 35
+state: SC | Emotional & Physical Well-Being: 33
+state: SD | Emotional & Physical Well-Being: 6
+state: TN | Emotional & Physical Well-Being: 45
+state: TX | Emotional & Physical Well-Being: 14
+state: UT | Emotional & Physical Well-Being: 24
+state: VT | Emotional & Physical Well-Being: 19
+state: VA | Emotional & Physical Well-Being: 8
+state: WA | Emotional & Physical Well-Being: 25
+state: WV | Emotional & Physical Well-Being: 49
+state: WI | Emotional & Physical Well-Being: 11
+state: WY | Emotional & Physical Well-Being: 37
+
+original length: 50
+[Finished in 0.3s]
+*/
