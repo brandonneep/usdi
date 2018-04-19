@@ -34,7 +34,7 @@
 			height: 10%;
 			box-sizing: border-box;
 			padding: .5em;
-			test-align: center;
+			text-align: center;
 
 		}
 		#Index2
@@ -65,6 +65,56 @@
 			box-sizing: border-box;
 			padding: .5em;
 		}
+		#Index5
+		{
+
+			float: left;
+			width: 15%;
+			background: white;
+			height: 10%;
+			box-sizing: border-box;
+			padding: .5em;
+		}
+		#Index6
+		{
+
+			float: left;
+			width: 15%;
+			background: white;
+			height: 10%;
+			box-sizing: border-box;
+			padding: .5em;
+		}
+		#Index7
+		{
+
+			float: left;
+			width: 15%;
+			background: white;
+			height: 10%;
+			box-sizing: border-box;
+			padding: .5em;
+		}
+		#Index8
+		{
+
+			float: left;
+			width: 15%;
+			background: white;
+			height: 10%;
+			box-sizing: border-box;
+			padding: .5em;
+		}
+		#Index9
+		{
+
+			float: left;
+			width: 15%;
+			background: white;
+			height: 10%;
+			box-sizing: border-box;
+			padding: .5em;
+		}
 		#ShowSelectedStates
 		{
 
@@ -83,23 +133,82 @@
  		 height: 80%;
  		 overflow: auto;
  		 box-sizing: border-box;
- 		 padding: 0.5em;
+ 		 padding: 0em;
 		}
 
 		#right
 		{
- 		 float: left;
+ 		 float: right;
 		 width: 75%;
 		 background: white;
  		 height: 80%;
  		 overflow: auto;
  		 box-sizing: ;
- 		 padding: 0.5em;
+ 		 padding:0em;
 		}
 		</style>
 	</head>
 
 	<body>
+						<script type = "text/javascript">
+					var happinessmultiplier = 1;
+					var businessmultiplier = 1;
+					var environmentmultiplier = 1;
+					var infrastructuremultiplier = 1;
+
+					function hmultup()
+					{
+						happinessmultiplier = happinessmultiplier+1;
+						document.getElementById("happinessmultiplier").innerHTML = happinessmultiplier;
+					}
+					function hmultdown()
+					{
+						if(happinessmultiplier>1)
+						{
+						happinessmultiplier = happinessmultiplier-1;
+						}
+						document.getElementById("happinessmultiplier").innerHTML = happinessmultiplier;
+					}
+					function bmultup()
+					{
+						businessmultiplier = businessmultiplier+1;
+						document.getElementById("businessmultiplier").innerHTML = businessmultiplier;
+					}
+					function bmultdown()
+					{
+						if(businessmultiplier>1)
+						{
+						businessmultiplier = businessmultiplier-1;
+						}
+						document.getElementById("businessmultiplier").innerHTML = businessmultiplier;
+					}
+					function emultup()
+					{
+						environmentmultiplier = environmentmultiplier+1;
+						document.getElementById("environmentmultiplier").innerHTML = environmentmultiplier;
+					}
+					function emultdown()
+					{
+						if(environmentmultiplier>1)
+						{
+						environmentmultiplier = environmentmultiplier-1;
+						}
+						document.getElementById("environmentmultiplier").innerHTML = environmentmultiplier;
+					}
+					function imultup()
+					{
+						infrastructuremultiplier = infrastructuremultiplier+1;
+						document.getElementById("infrastructuremultiplier").innerHTML = infrastructuremultiplier;
+					}
+					function imultdown()
+					{
+						if(infrastructuremultiplier>1)
+						{
+						infrastructuremultiplier = infrastructuremultiplier-1;
+						}
+						document.getElementById("infrastructuremultiplier").innerHTML = infrastructuremultiplier;
+					}
+				</script>
 
 		<div id = "header">
 			<font size= "40">
@@ -113,28 +222,289 @@
 				&nbsp&nbsp&nbspState
 			</div>
 			<div id= "Index1">
-				happiness<br />
-				<button type= button> up </button>
-				<button type= button> down </button>
+
+
+
+
+				happiness 
+				x<small id = "happinessmultiplier">1</small>
+					<br />
+				<button onclick = "hmultup()">up</button>
+				<button onclick = "hmultdown()">down</button>
+
+
+
 			</div>
 			<div id= "Index2">
-				business<br />
-				<button type= button> up </button>
-				<button type= button> down </button>
+				business x<small id = "businessmultiplier">1</small><br />
+				<button onclick = "bmultup()"> up </button>
+				<button onclick = "bmultdown()"> down </button>
 			</div>
 			<div id= "Index3">
-				environment<br />
-				<button type= button> up </button>
-				<button type= button> down </button>
+				environment x<small id = "environmentmultiplier">1</small><br />
+				<button onclick = "emultup()"> up </button>
+				<button onclick = "emultdown()"> down </button>
 			</div>
 			<div id= "Index4">
-				infrastructure<br />
-				<button type= button> up </button>
-				<button type= button> down </button>
+				infrastructure x<small id = "infrastructuremultiplier">1</small><br />
+				<button onclick = "imultup()"> up </button>
+				<button onclick = "imultdown()"> down </button>
 			</div>
 		</div>
-		<div id= "content">
+
+
+				<script type="text/javascript">
+function copy(o)
+{
+	var output,v,key;
+	output = Array.isArray(o) ? []: {};
+	for(key in o) 
+	{
+		v = o[key];
+		output[key] = (typeof v === "object") ? copy(v) : v;
+	}
+	return output;
+}
+
+					var max = 1000;
+var hash = (string, max) => {
+  var hash = 0;
+  for (var i = 0; i < string.length; i++) {
+    hash = hash + (string.charCodeAt(i)*string.charCodeAt(i));
+  }
+  return hash % max;
+};
+var HashTable = function() {
+  var storage = [];
+  const max = 1000;
+  
+  //currently prints all hash indexes that are defined
+      //this function needs to be changed/have several versions to benefit us
+  this.print = function() {
+    for(var i = 0; i< max; i++)
+    {
+       if(storage[i]!=undefined)
+       {
+        document.write(storage[i]);
+        document.write("<br>");
+      }
+    }
+    
+  }
+
+
+  this.calcrank = function()
+  {
+  	let x = 0;
+  	let y = 0;
+  	let z = 0;
+  	for(var i = 0; i< max; i++)
+    {
+       if(storage[i]!=undefined)
+       {
+        for(var j = 0; j<storage[i].length; j++)
+        {
+        	x = storage[i][j][3]/environmentmultiplier;
+        	x = -x;
+        	x = -x;
+        	y = storage[i][j][2]/businessmultiplier;
+        	y = -y;
+        	y = -y;
+        	z = storage[i][j][1];
+        	z= -z;
+        	z=-z;
+        	storage[i][j][4] = x + y + z;
+        }
+       }
+    } 
+   }
+
+   this.sortprint = function()
+   {
+   		var sorted = [];
+   		let doot = 0;
+   		let boop = 0;
+   		let doom = 0;
+   		let howmany = 5;
+   		var re;
+   		sorted = copy(storage);
+   		document.write(sorted);
+   		//puts storage into sorted
+   		// for(var i = 0; i<max; i++)
+   		// {
+   		// 	if(storage[i]!=undefined)
+   		// 	{
+   		// 		for(var j= 0; j<storage[i].length; j++)
+   		// 		{
+   		// 			boop=0;
+   		// 			for(var k = 0; k<howmany; k++)
+   		// 			{
+   		// 				doom = 0;
+   		// 				doom = storage[i][j][k];
+   		// 				document.write(doom);
+   		// 				// document.write(storage[i][j][k]);
+   		// 				document.write("   ");
+   		// 				sorted[doot][boop] = copy(storage[i][j][k]);
+   		// 				//document.write(re);
+   		// 				//document.write(sorted[0][0]);
+   		// 				boop= boop+ 1;
+   		// 			}
+   		// 			doot= doot +1;
+   		// 		}
+   		// 	}
+   		// }
+   		document.write("bith");
+   		//sort sorted
+    // for(var m = 0; m< 50; m++)
+    // {
+    //    if(storage[i]!=undefined)
+    //    {
+    //     document.write(sorted[i]);
+    //     document.write("<br>");
+    //   }
+    // }
+
+
+
+
+
+   }
+//adds the stock symbol and value to hash table, will need to be altered for more datapoints per symbol
+  this.add = function(key, happiness, business, environment, infrastructure) {
+    var index = hash(key, max);
+    if (storage[index] === undefined) {
+      storage[index] = [
+        [key, happiness, business, environment, infrastructure]
+      ];
+    } else {
+      var inserted = false;
+      for (var i = 0; i < storage[index].length; i++) {
+        if (storage[index][i][0] === key) {
+          storage[index][i][1] = happiness;
+          storage[index][i][2] = business;
+          storage[index][i][3] = environment;
+          storage[index][i][4] = infrastructure;
+          inserted = true;
+        }
+      }
+      if (inserted === false) {
+        storage[index].push([key, happiness, business, environment, infrastructure]);
+      }
+    }
+  };
+  this.remove = function(key) {
+    var index = hash(key, max);
+    if (storage[index].length === 1 && storage[index][0][0] === key) {
+      delete storage[index];
+    } else {
+      for (var i = 0; i < storage[index].length; i++) {
+        if (storage[index][i][0] === key) {
+          delete storage[index][i];
+        }
+      }
+    }
+  };
+//prints the stock symbol and the value
+  this.printinfo = function(key)
+  {
+    var index = hash(key,max);
+    if(storage[index]===undefined)
+    {
+    document.write("no symbol match");  
+  }
+    else
+    {
+      for(var i=0; i<storage[index].length; i++)
+      {
+        if (storage[index][i][0] === key)
+        {
+          document.write(storage[index][i][0]);
+          document.write(" ");
+          document.write(storage[index][i][1]);
+          document.write(" ");
+          document.write(storage[index][i][2]);
+          document.write(" ");
+          document.write(storage[index][i][3]);
+          document.write(" ");
+          document.write(storage[index][i][4]);
+        }
+      }
+    }
+  }
+  //returns happiness of 
+
+  this.lookup = function(key) {
+    var index = hash(key, max);
+    if (storage[index] === undefined) {
+      return undefined;
+    } else {
+      for (var i = 0; i < storage[index].length; i++) {
+        if (storage[index][i][0] === key) {
+          return storage[index][i][1];
+        }
+      }
+    }
+  };
+};
+let ht = new HashTable();
+	ht.add("AL", "1","2","3","4");
+	ht.add("AK", "24","23","23","23");
+	ht.add("AZ", "244","22","22","22");
+	ht.add("AR", "500","50","50","50");
+	ht.add("CA", "2444","2","2","2");
+	ht.add("CO", "4227","47","47","47");
+	ht.add("CT", "7823","23","23","23");
+	ht.add("DE", "2972","22","22","22");
+	ht.add("FL", "5730","50","50","50");
+	ht.add("GA", "278","2","2","2");
+	ht.add("HI", "4987","47","47","47");
+	ht.add("ID", "273","23","23","23");
+	ht.add("IL", "5222","22","22","22");
+	ht.add("IN", "5770","50","50","50");
+	ht.add("IA", "2786","2","2","2");
+	ht.add("KS", "4757","47","47","47");
+	ht.add("KY", "2773","23","23","23");
+	ht.add("LA", "2762","22","22","22");
+	ht.add("ME", "5740","50","50","50");
+	ht.add("MD", "7892","2","2","2");
+	ht.add("MA", "49757","47","47","47");
+	ht.add("MI", "27753","23","23","23");
+	ht.add("MN", "22","22","22","22");
+	ht.add("MS", "50","50","50","50");
+	ht.add("MO", "2","2","2","2");
+	ht.add("MT", "47","47","47","47");
+	ht.add("NE", "23","23","23","23");
+	ht.add("NV", "22","22","22","22");
+	ht.add("NH", "50","50","50","50");
+	ht.add("NJ", "2","2","2","2");
+	ht.add("NM", "47","47","47","47");
+	ht.add("NY", "23","23","23","23");
+	ht.add("NC", "22","22","22","22");
+	ht.add("ND", "50","50","50","50");
+	ht.add("OH", "2","2","2","2");
+	ht.add("OK", "47","47","47","47");
+	ht.add("OR", "23","23","23","23");
+	ht.add("PA", "22","22","22","22");
+	ht.add("RI", "50","50","50","50");
+	ht.add("SC", "2","2","2","2");
+	ht.add("SD", "47","47","47","47");
+	ht.add("TN", "23","23","23","23");
+	ht.add("TX", "22","22","22","22");
+	ht.add("UT", "50","50","50","50");
+	ht.add("VA", "2","2","2","2");
+	ht.add("VT", "47","47","47","47");
+	ht.add("WA", "23","23","23","23");
+	ht.add("WV", "22","22","22","22");
+	ht.add("WI", "50","50","50","50");
+	ht.add("WY", "2","2","2","2");
+
+
+//ht.print
+        </script>
+
+   		<div id= "content">
 			<div id = "States">
+				<button type= button> Apply Changes </button><br />
 				<button type= button> Select All </button><br />
 				<button type= button> select </button> Alabama<br />
 				<button type= button> select </button> Alaska<br />
@@ -187,10 +557,25 @@
 				<br /><button type= button> select </button> Wisonsin
 				<br /><button type= button> select </button> Wyoming
 			</div>
-			<div id = "right">
+		
+    
+    
 
+      <div id = "right">
+        <script language="JavaScript">
+                // ht.calcrank();
+                //ht.print();
+                ht.sortprint();
+                  //prints whole hash
+                 //ht.sortprint();
+                  //prints just info of stock "KEY"
+                 //ht.printinfo("LA");
+                 //ht.printinfo("AL");
+
+                 // document.write(ht.lookup("NM"));
+				</script>
 			</div>
 		</div>
-
+		
 	</body>
 </html>
