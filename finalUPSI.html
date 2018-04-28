@@ -1,0 +1,1803 @@
+<html>
+		<title>US Prosperity Index</title>
+		<style type='text/css'>
+		body { background-image: url(http://pluspng.com/img-png/png-usa-outline-png-small-medium-large-600.png); background-size: 100px; background-position: center;}
+		
+		#header
+		{
+			height:10%;
+			text-align: center;
+		}
+		#name
+		{
+			height:5%;
+			text-align: center;
+		}
+		#Indeces
+		{
+			float: left;
+			width: 100%;
+			background: transparent;
+			height: 10%;
+			box-sizing: border-box;
+			padding: 0em;
+			text-align: center;
+		}
+		#IndexSpacing
+		{
+			float: left;
+			width: 22%;
+			background: transparent;
+			height: 200%;
+			box-sizing: border-box;
+			padding: .5em;
+		}
+		#indexSpacing2
+		{
+			float: left;
+			width: 10%;
+			background: white;
+			height: 200%;
+			box-sizing: border-box;
+			padding: .5em;
+		}
+		#Index1
+		{
+			float: left;
+			width: 7%;
+			background: white;
+			height: 200%;
+			box-sizing: border-box;
+			padding: 0em;
+			text-align: center;
+		}
+		#Index2
+		{
+			float: left;
+			width: 5%;
+			background: white;
+			height: 200%;
+			box-sizing: border-box;
+			padding: 0em;
+			text-align : center;
+		}
+		#Index3
+		{
+			float: left;
+			width: 8%;
+			background: white;
+			height: 200%;
+			box-sizing: border-box;
+			padding: 0em;
+		}
+		#Index4
+		{
+			float: left;
+			width: 7%;
+			background: white;
+			height: 200%;
+			box-sizing: border-box;
+			padding: 0em;
+			text-align : center;
+		}
+		#Index5
+		{
+			float: left;
+			width: 7%;
+			background: white;
+			height: 200%;
+			box-sizing: border-box;
+			padding: 0em;
+		}
+		#Index6
+		{
+			float: left;
+			width: 9%;
+			background: white;
+			height: 200%;
+			box-sizing: border-box;
+			padding: 0em;
+		}
+		#Index7
+		{
+			float: left;
+			width: 7%;
+			background: white;
+			height: 200%;
+			box-sizing: border-box;
+			padding: 0em;
+		}
+		#Index8
+		{
+			float: left;
+			width: 7%;
+			background: white;
+			height: 200%;
+			box-sizing: border-box;
+			padding: 0em;
+		}
+		#Index9
+		{
+			float: left;
+			width: 7%;
+			background: white;
+			height: 200%;
+			box-sizing: border-box;
+			padding: 0em;
+		}
+		#Index10
+		{
+			float: left;
+			width: 7%;
+			background: white;
+			height: 200%;
+			box-sizing: border-box;
+			padding: 0em;
+		}
+		#ShowSelectedStates
+		{
+			text-align: center;
+			float: left;
+			width: 5%;
+			background: white;
+			height: 200%;
+			text-align: center;
+			box-sizing: border-box;
+			padding: .5em;
+		}
+		#States 
+		{
+ 		 float: left;
+		 width: 22%;
+		 background: white;
+ 		 height: 83%;
+ 		 overflow: auto;
+ 		 box-sizing: border-box;
+ 		 padding: 0em;
+		}
+		#right
+		{
+ 		 float: center;
+		 width: 78%;
+		 background: white;
+ 		 height: 83%;
+ 		 overflow: auto;
+ 		 box-sizing: ;
+ 		 padding: 0em;
+		}
+		#St
+		{
+			text-align: center;
+			float: left;
+			width: 8%;
+			background: transparent;
+			height: 117%;
+			box-sizing: border-box;
+			padding: 0.5em;
+		}
+		#happy
+		{
+			text-align: center;
+			float: left;
+			width: 6%;
+			background: transparent;
+			height: 117%;
+			box-sizing: border-box;
+			padding: 0.5em;
+		}
+		#work
+		{
+			text-align: center;
+			float: left;
+			width: 9%;
+			background: transparent;
+			height: 117%;
+			box-sizing: border-box;
+			padding: 0.5em;
+		}
+		#community
+		{
+			text-align: center;
+			float: left;
+			width: 9%;
+			background: transparent;
+			height: 117%;
+			box-sizing: border-box;
+			padding: 0.5em;
+		}
+		#healthCare
+		{
+			text-align: center;
+			float: left;
+			width: 10%;
+			background: transparent;
+			height: 117%;
+			box-sizing: border-box;
+			padding: 0.5em;
+		}
+		#economy
+		{
+			text-align: center;
+			float: left;
+			width: 8.3%;
+			background: transparent;
+			height: 117%;
+			box-sizing: border-box;
+			padding: 0.5em;
+		}
+		#opportunity
+		{
+			text-align: center;
+			float: left;
+			width: 12%;
+			background: transparent;
+			height: 117%;
+			box-sizing: border-box;
+			padding: 0.5em;
+		}
+		#environment
+		{
+			text-align: center;
+			float: left;
+			width: 8.3%;
+			background: transparent;
+			height: 117%;
+			box-sizing: border-box;
+			padding: 0.5em;
+		}
+		#fiscalStability
+		{
+			text-align: center;
+			float: left;
+			width: 10%;
+			background: transparent;
+			height: 117%;
+			box-sizing: border-box;
+			padding: 0.5em;
+		}
+		#infrastructure
+		{
+			text-align: center;
+			float: left;
+			width: 8%;
+			background: transparent;
+			height: 117%;
+			box-sizing: border-box;
+			padding: 0.5em;
+		}
+		#publicSafety
+		{
+			text-align: center;
+			float: left;
+			width: 10%;
+			background: transparent;
+			height: 117%;
+			box-sizing: border-box;
+			padding: 0.5em;
+		}
+		#footer
+		{
+			text-align: center;
+			float: left;
+			width: 100%;
+			background: transparent;
+			height: 20%;
+			box-sizing: border-box;
+			padding: 0.5em;
+		}
+		</style>
+	</head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    overflow: auto;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+    overflow: auto;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: transparent; 
+    border-radius: 10px;
+    overflow: auto;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(179, 179, 179); 
+    overflow:auto;
+}
+</style>
+
+	<body>
+						<script type = "text/javascript">
+					var happinessmultiplier = 1;
+					var environmentmultiplier = 1;
+					var infrastructuremultiplier = 1;
+					var workmultiplier =1;
+					var communitymultiplier = 1;
+					var healthmultiplier = 1;
+					var econmultiplier = 1;
+					var oppmultiplier = 1;
+					var fismultiplier = 1;
+					var psmultiplier = 1;
+					function hmultup()
+					{
+						happinessmultiplier = happinessmultiplier+1;
+						document.getElementById("happinessmultiplier").innerHTML = happinessmultiplier;
+					}
+					function hmultdown()
+					{
+						if(happinessmultiplier>1)
+						{
+						happinessmultiplier = happinessmultiplier-1;
+						}
+						document.getElementById("happinessmultiplier").innerHTML = happinessmultiplier;
+					}
+					function emultup()
+					{
+						environmentmultiplier = environmentmultiplier+1;
+						document.getElementById("environmentmultiplier").innerHTML = environmentmultiplier;
+					}
+					function emultdown()
+					{
+						if(environmentmultiplier>1)
+						{
+						environmentmultiplier = environmentmultiplier-1;
+						}
+						document.getElementById("environmentmultiplier").innerHTML = environmentmultiplier;
+					}
+					function imultup()
+					{
+						infrastructuremultiplier = infrastructuremultiplier+1;
+						document.getElementById("infrastructuremultiplier").innerHTML = infrastructuremultiplier;
+					}
+					function imultdown()
+					{
+						if(infrastructuremultiplier>1)
+						{
+						infrastructuremultiplier = infrastructuremultiplier-1;
+						}
+						document.getElementById("infrastructuremultiplier").innerHTML = infrastructuremultiplier;
+					}
+					function workmultup()
+					{
+						workmultiplier = workmultiplier+1;
+						document.getElementById("workmultiplier").innerHTML = workmultiplier;
+					}
+					function workmultdown()
+					{
+						if(workmultiplier>1)
+						{
+						workmultiplier = workmultiplier-1;
+						}
+						document.getElementById("workmultiplier").innerHTML = workmultiplier;
+					}
+					function commmultup()
+					{
+						communitymultiplier = communitymultiplier+1;
+						document.getElementById("communitymultiplier").innerHTML = communitymultiplier;
+					}
+					function commmultdown()
+					{
+						if(communitymultiplier>1)
+						{
+						communitymultiplier = communitymultiplier-1;
+						}
+						document.getElementById("communitymultiplier").innerHTML = communitymultiplier;
+					}
+					function healthmultup()
+					{
+						healthmultiplier = healthmultiplier+1;
+						document.getElementById("healthmultiplier").innerHTML = healthmultiplier;
+					}
+					function healthmultdown()
+					{
+						if(healthmultiplier>1)
+						{
+						healthmultiplier = healthmultiplier-1;
+						}
+						document.getElementById("healthmultiplier").innerHTML = healthmultiplier;
+					}
+					function econmultup()
+					{
+						econmultiplier = econmultiplier+1;
+						document.getElementById("econmultiplier").innerHTML = econmultiplier;
+					}
+					function econmultdown()
+					{
+						if(econmultiplier>1)
+						{
+						econmultiplier = econmultiplier-1;
+						}
+						document.getElementById("econmultiplier").innerHTML = econmultiplier;
+					}
+					function oppmultup()
+					{
+						oppmultiplier = oppmultiplier+1;
+						document.getElementById("oppmultiplier").innerHTML = oppmultiplier;
+					}
+					function oppmultdown()
+					{
+						if(oppmultiplier>1)
+						{
+						oppmultiplier = oppmultiplier-1;
+						}
+						document.getElementById("oppmultiplier").innerHTML = oppmultiplier;
+					}
+					function fismultup()
+					{
+						fismultiplier = fismultiplier+1;
+						document.getElementById("fismultiplier").innerHTML = fismultiplier;
+					}
+					function fismultdown()
+					{
+						if(fismultiplier>1)
+						{
+						fismultiplier = fismultiplier-1;
+						}
+						document.getElementById("fismultiplier").innerHTML = fismultiplier;
+					}
+					function psmultup()
+					{
+						psmultiplier = psmultiplier+1;
+						document.getElementById("psmultiplier").innerHTML = psmultiplier;
+					}
+					function psmultdown()
+					{
+						if(fismultiplier>1)
+						{
+						psmultiplier = psmultiplier-1;
+						}
+						document.getElementById("psmultiplier").innerHTML = psmultiplier;
+					}
+				</script>
+		<div id = "header">
+			<font size= "50">
+					<o>&nbsp United States Prosperity Index</p>
+
+			</font>
+		</div>
+				<div id = "name"
+			<font size = "10">
+				Brandon Neep & Antonio Corona-Sanchez
+			</font>
+		</div>
+		<div id= "indeces">
+			<div id= "IndexSpacing">
+			</div>
+			<div id= "ShowSelectedStates">
+				State
+			</div>
+			<div id= "Index1">
+				Happiness 
+				x<small id = "happinessmultiplier">1</small>
+					<br />
+				<button onclick = "hmultup()">up</button>
+				<button onclick = "hmultdown()">down</button>
+			</div>
+			<div id= "Index2">
+				Work x<small id = "workmultiplier">1</small><br />
+				<button onclick = "workmultup()">up</button>
+				<button onclick = "workmultdown()">down</button>
+			</div>
+			<div id= "Index3">
+				Community x<small id = "communitymultiplier">1</small><br/>
+				<button onclick = "commmultup()">up</button>
+				<button onclick = "commmultdown()">down</button>
+			</div>
+			<div id= "Index4">
+				Health Care x<small id = "healthmultiplier">1</small><br/>
+				<button onclick = "healthmultup()">up</button>
+				<button onclick = "healthmultdown()">down</button>
+			</div>
+			<div id= "Index5">
+				Economy x<small id = "econmultiplier">1</small><br/>
+				<button onclick = "econmultup()">up</button>
+				<button onclick = "econmultdown()">down</button>
+			</div>
+			<div id= "Index6">
+				Opportunity x<small id = "oppmultiplier">1</small><br/>
+				<button onclick = "oppmultup()">up</button>
+				<button onclick = "oppmultdown()">down</button>
+			</div>
+			<div id= "Index7">
+				Environment x<small id = "environmentmultiplier">1</small><br />
+				<button onclick = "emultup()"> up </button>
+				<button onclick = "emultdown()"> down </button>
+			</div>
+			<div id= "Index8">
+				Fiscal Stability x<small id = "fismultiplier">1</small><br />
+				<button onclick = "fismultup()"> up </button>
+				<button onclick = "fismultdown()"> down </button>
+			</div>
+			<div id= "Index9">
+				Infrastructure x<small id = "infrastructuremultiplier">1</small><br />
+				<button onclick = "imultup()"> up </button>
+				<button onclick = "imultdown()"> down </button>
+			</div>
+			<div id= "Index10">
+				Safety x<small id = "psmultiplier">1</small><br/>
+				<button onclick = "psmultup()"> up </button>
+				<button onclick = "psmultdown()"> down </button>
+			</div>
+			<div id= "IndexSpacing2">
+			</div>
+		</div>
+
+<script type="text/javascript">
+function copy(o)
+{
+	var counter = 0;
+	var counting = 0;
+	var v,key;
+	var output = [];
+	output = Array.isArray(o) ? []: {};
+	for(key in o) 
+	{
+		if(o[key]!=undefined)
+		{
+			for(var x = 0; x <o[key].length; x++)
+			{
+				v="";
+				// quantifier to skip the inclusion of the element
+				if(o[key][x][12] == 0)
+				{
+					continue;
+				}
+				for(var y= 0; y< o[key][x].length; y++)
+				{
+				v = o[key][x][y];
+				//document.write(v);
+				//document.write("<br>");
+				output[counter] = (typeof v === "object") ? copy(v) : v;	
+				counter ++;	
+				
+				}
+				
+			}
+	
+		}
+	}
+	return output;
+}
+var max = 1000;
+//create the hash
+var hash = (string, max) => {
+  var hash = 0;
+  for (var i = 0; i < string.length; i++) {
+    hash = hash + (string.charCodeAt(i)*string.charCodeAt(i));
+  }
+  return hash % max;
+};
+let HashTable = function() {
+  let storage = [];
+  const max = 1000;
+  
+  //currently prints all hash indexes that are defined
+      //this function needs to be changed/have several versions to benefit us
+  this.print = function() {
+    for(var i = 0; i< max; i++)
+    {
+       if(storage[i]!=undefined)
+       {
+        document.write(storage[i]);
+        document.write("<br>");
+      }
+    }
+    
+  }
+//adds the state symbol and value to hash table
+  this.add = function(key, happiness, work, community, HealthCare, economy, opportunity, environment, FiscalStability, infrastructure, publicSafety, rank, click)
+  {
+    var index = hash(key, max);
+    if (storage[index] === undefined) {
+      storage[index] = [
+        [key, happiness, work, community, HealthCare, economy, opportunity, environment, FiscalStability, infrastructure, publicSafety, rank, click]
+      ];
+    } else {
+      var inserted = false;
+      for (var i = 0; i < storage[index].length; i++) {
+        if (storage[index][i][0] === key) 
+        {
+          storage[index][i][1] = happiness;
+          storage[index][i][2] = work;
+          storage[index][i][3] = community;
+          storage[index][i][4] = HealthCare;
+          storage[index][i][5] = economy;
+          storage[index][i][6] = opportunity;
+          storage[index][i][7] = environment;
+          storage[index][i][8] = FiscalStability;
+          storage[index][i][9] = infrastructure;
+          storage[index][i][10] = publicSafety;
+          storage[index][i][11] = rank; 
+          storage[index][i][12] = click;
+          inserted = true;
+        }
+      }
+      if (inserted === false) {
+        storage[index].push([key, happiness , work , community , HealthCare , economy , opportunity , environment , FiscalStability , infrastructure , publicSafety, rank, click]);
+      }
+    }
+  };
+  this.remove = function(key) {
+    var index = hash(key, max);
+    if (storage[index].length === 1 && storage[index][0][0] === key) {
+      delete storage[index];
+    } else {
+      for (var i = 0; i < storage[index].length; i++) {
+        if (storage[index][i][0] === key) {
+          delete storage[index][i];
+        }
+      }
+    }
+  };
+//prints the stock symbol and the value
+  this.printinfo = function(key)
+  {
+    var index = hash(key,max);
+    if(storage[index]===undefined)
+    {
+    document.write("no symbol match");  
+  }
+    else
+    {
+      for(var i=0; i<storage[index].length; i++)
+      {
+        if (storage[index][i][0] === key)
+        {
+          document.write(storage[index][i][0]);
+          document.write(" ");
+          document.write(storage[index][i][1]);
+          document.write(" ");
+          document.write(storage[index][i][2]);
+          document.write(" ");
+          document.write(storage[index][i][3]);
+          document.write(" ");
+          document.write(storage[index][i][4]);
+          document.write(" ");
+          document.write(storage[index][i][5]);
+          document.write(" ");
+          document.write(storage[index][i][6]);
+          document.write(" ");
+          document.write(storage[index][i][7]);
+          document.write(" ");
+          document.write(storage[index][i][8]);
+          document.write(" ");
+          document.write(storage[index][i][9]);
+          document.write(" ");
+          document.write(storage[index][i][10]);
+          document.write(" ");
+          document.write(storage[index][i][11]);
+          document.write(" ");
+          document.write(storage[index][i][12]);
+          document.write(" ");
+        }
+      }
+    }
+  }
+  //returns happiness of 
+  this.lookup = function(key) {
+    var index = hash(key, max);
+    if (storage[index] === undefined) {
+      return undefined;
+    } else {
+      for (var i = 0; i < storage[index].length; i++) {
+        if (storage[index][i][0] === key) {
+          return storage[index][i][1];
+        }
+      }
+    }
+  };
+  this.calcrank = function()
+  {
+  	var happinessRank = 0; 
+  	var workRank = 0;
+  	var communityRank = 0;
+  	var HealthCareRank = 0;
+  	var economyRank = 0; 
+  	var opportunityRank = 0;
+  	var environmentRank = 0; 
+  	var FiscalStabilityRank = 0;
+  	var infrastructureRank = 0; 
+  	var publicSafetyRank = 0;
+  	for (var i = 0 ; i < max; i++)
+  	{
+  		//this for loop will search in the hash table for anything that is defined
+  		if ( storage[i] != undefined)
+  		{
+  			for ( j = 0; j < storage[i].length; j++)
+  			{
+  				happinessRank = storage[i][j][1]*happinessmultiplier;
+  				happinessRank =-happinessRank; 
+  				happinessRank =-happinessRank;
+  				workRank = storage[i][j][2]*workmultiplier;
+  				workRank =-workRank;
+  				workRank =-workRank;
+  				communityRank = storage[i][j][3]*communitymultiplier;
+  				communityRank =-communityRank; 
+  				communityRank =-communityRank;
+  				HealthCareRank = storage[i][j][4]*healthmultiplier;
+  				HealthCareRank =-HealthCareRank;
+  				HealthCareRank =-HealthCareRank;
+  				economyRank = storage[i][j][5]*econmultiplier;
+  				economyRank =-economyRank;
+  				economyRank =-economyRank;
+  				opportunityRank = storage[i][j][6]*oppmultiplier;
+  				opportunityRank =-opportunityRank;
+  				opportunityRank =-opportunityRank; 
+  				environmentRank = storage[i][j][7]*environmentmultiplier;
+  				environmentRank =-environmentRank;
+  				environmentRank =-environmentRank;
+  				FiscalStabilityRank = storage[i][j][8]*fismultiplier;
+  				FiscalStabilityRank =-FiscalStabilityRank;
+  				FiscalStabilityRank =-FiscalStabilityRank;
+  				infrastructureRank = storage[i][j][9]*infrastructuremultiplier;
+  				infrastructureRank =-infrastructureRank;
+  				infrastructureRank =-infrastructureRank;
+  				publicSafetyRank = storage[i][j][10]*psmultiplier;
+  				publicSafetyRank =-publicSafetyRank;
+  				publicSafetyRank =-publicSafetyRank;
+  				storage[i][j][11] = happinessRank + workRank + communityRank + HealthCareRank + economyRank + opportunityRank + environmentRank + FiscalStabilityRank + infrastructureRank + publicSafetyRank; //something
+  			}
+  		}
+  	}
+  };
+  var sortedlength = 0;
+  var sorted = [];
+   this.sortprint = function()
+   {
+   		sorted = copy(storage);
+   		//document.write(sorted);
+   		//document.write(sorted.length);
+   		//sort
+   		//document.write("<br>");
+   		//document.write(sorted.length);
+   		sortedlength = sorted.length;
+   		//document.write(sortedlength);
+		for(var i = 11; i<= sorted.length; i+=13) //asdf
+		{
+			var temp1 = sorted[i-11]; 
+			var temp2 = sorted[i-10];
+			var temp3 = sorted[i-9];
+			var temp4 = sorted[i-8];
+			var temp5 = sorted[i-7];
+			var temp6 = sorted[i-6];
+			var temp7 = sorted[i-5];
+			var temp8 = sorted[i-4];
+			var temp9 = sorted[i-3];
+			var temp10 = sorted[i-2];
+			var temp11 = sorted[i-1];
+			var temp12 = sorted[i];
+			var temp13 = sorted[i+1];
+			var j = i-13; //asdf
+			while(j>= 0 && Number(sorted[j])>Number(temp12))
+			{			
+				sorted[j+2] = sorted[j-11];		
+				sorted[j+3] = sorted[j-10];
+				sorted[j+4] = sorted[j-9];
+				sorted[j+5] = sorted[j-8];
+				sorted[j+6] = sorted[j-7];
+				sorted[j+7] = sorted[j-6];
+				sorted[j+8] = sorted[j-5];
+				sorted[j+9] = sorted[j-4];
+				sorted[j+10] = sorted[j-3];
+				sorted[j+11] = sorted[j-2];
+				sorted[j+12] = sorted[j-1];
+				sorted[j+13] = sorted[j];
+				sorted[j+14] = sorted[j+1];
+				j-=13; //asdf
+			}
+			sorted[j+2] = temp1;
+			sorted[j+3] = temp2;
+			sorted[j+4] = temp3;
+			sorted[j+5] = temp4;
+			sorted[j+6] = temp5;
+			sorted[j+7]= temp6;
+			sorted[j+8]= temp7;
+			sorted[j+9]= temp8;
+			sorted[j+10]= temp9;
+			sorted[j+11]= temp10;
+			sorted[j+12]= temp11;
+			sorted[j+13]= temp12;
+			sorted[j+14]= temp13;
+		}
+		var coon = 0;
+		var byron = 1;
+		document.getElementById("St").innerHTML= ("");
+		document.getElementById("happy").innerHTML= ("");
+		document.getElementById("work").innerHTML= ("");
+		document.getElementById("community").innerHTML= ("");
+		document.getElementById("healthCare").innerHTML= ("");
+		document.getElementById("economy").innerHTML= ("");
+		document.getElementById("opportunity").innerHTML= ("");
+		document.getElementById("environment").innerHTML= ("");
+		document.getElementById("fiscalStability").innerHTML= ("");
+		document.getElementById("infrastructure").innerHTML= ("");
+		document.getElementById("publicSafety").innerHTML= ("");
+		for(var i = 0; i< sorted.length ; i++)
+		{
+				if( coon == 13)
+				{
+					coon = 0;
+				}
+				
+				if(coon == 0)
+				{
+					document.getElementById("St").innerHTML+=byron;
+					document.getElementById("St").innerHTML+=")";					
+					document.getElementById("St").innerHTML+=sorted[i];
+					document.getElementById("St").innerHTML+=("<br>");
+					byron++;
+				}
+				if(coon == 1)
+				{
+					document.getElementById("happy").innerHTML+=sorted[i];
+					document.getElementById("happy").innerHTML+=("<br>");
+				}
+				if(coon == 2)
+				{
+					document.getElementById("work").innerHTML+=sorted[i];
+					document.getElementById("work").innerHTML+=("<br>");
+				}
+				if(coon == 3)
+				{
+					document.getElementById("community").innerHTML+=sorted[i];
+					document.getElementById("community").innerHTML+=("<br>");
+				}
+				if(coon == 4)
+				{
+					document.getElementById("healthCare").innerHTML+=sorted[i];
+					document.getElementById("healthCare").innerHTML+=("<br>");
+				}
+				if(coon == 5)
+				{
+					document.getElementById("economy").innerHTML+=sorted[i];
+					document.getElementById("economy").innerHTML+=("<br>");
+				}
+				if(coon == 6)
+				{
+					document.getElementById("opportunity").innerHTML+=sorted[i];
+					document.getElementById("opportunity").innerHTML+=("<br>");
+				}
+				if(coon == 7)
+				{
+					document.getElementById("environment").innerHTML+=sorted[i];
+					document.getElementById("environment").innerHTML+=("<br>");
+				}
+				if(coon == 8)
+				{
+					document.getElementById("fiscalStability").innerHTML+=sorted[i];
+					document.getElementById("fiscalStability").innerHTML+=("<br>");
+				}
+				if(coon == 9)
+				{
+					document.getElementById("infrastructure").innerHTML+=sorted[i];
+					document.getElementById("infrastructure").innerHTML+=("<br>");
+				}
+				if(coon == 10)
+				{
+					document.getElementById("publicSafety").innerHTML+=sorted[i];
+					document.getElementById("publicSafety").innerHTML+=("<br>");
+				}
+				
+				if(coon == 12)
+				{
+					coon = -1;
+				}
+				coon++;
+		}
+		// for(var i = 0; i< sorted.length ; i++)
+		// {
+		// 		if( coon == 13)
+		// 		{
+		// 			document.getElementById("right").innerHTML+= ("<br>");
+		// 			coon = 0;
+		// 		}
+		// 		document.getElementById("right").innerHTML+=sorted[i];
+		// 		document.getElementById("right").innerHTML+= (" ");
+		// 		coon++;
+		// }
+	
+   };
+     this.getlength = function()
+  {
+  	//document.write(sortedlength);
+  	return sortedlength;
+  }
+  this.applychanges = function()
+  {
+  	this.calcrank();
+  	this.sortprint();
+  }
+  this.printsorted = function(x)
+  {
+  	return sorted[i]
+  }
+  this.returnbool = function(x,y,z)
+  {
+  	return storage[x][y][z];
+  };
+  this.changebool = function (x,y,z)
+  {
+  	
+  	if(storage[x][y][z] == 1)
+  	{
+  		storage[x][y][z] = 0;
+  	}
+  	else
+  	{
+  		storage[x][y][z] = 1;
+  	}
+  };
+};
+let ht = new HashTable();
+//ht.add("AL", " 0", " 1", " 2", " 3" , " 4", " 5", " 6", " 7", " 8", " 9", " 0");
+ht.add("AL", " 41", " 43", " 42", " 46" , " 38", " 48", " 35", " 25", " 32", " 43", " 0", " 1");
+ht.add("AK", " 23", " 49", " 50", " 28" ," 50", " 5", " 19", " 47", " 42", " 49", " 0", " 1");
+ht.add("AZ", " 22", " 19", " 27", " 24", " 16", " 45", " 39", " 34", " 12", " 41", " 0", " 1");
+ht.add("AR", " 50", " 28", " 35", " 49", " 40", " 41", " 7", " 20", " 46", " 47", " 0", " 1");
+ht.add("CA", " 2", " 21", "21", " 11"," 4", " 46", " 50",  " 43", " 38", " 34", " 0", " 1"); //5
+ht.add("CO", " 13", " 7", " 33", " 9" , " 1", " 28", " 10", " 31", " 14", " 27", " 0", " 1"); 
+ht.add("CT", " 15", " 40", " 11", " 4", " 43", " 29", " 38", " 41", " 41", " 6", " 0", " 1"); 
+ht.add("DE", " 30", " 25", " 40", " 25", " 10", " 7", " 24", " 15", " 18", " 40", " 0", " 1"); 
+ht.add("FL", " 16", " 32", " 49", " 34", " 5", " 36", " 33", " 3", " 11", " 35", " 0", " 1");
+ht.add("GA", " 27", " 24", " 36", " 42", " 14", " 33", " 32", " 13", " 17", " 37", " 0", " 1"); //10
+ht.add("HI", " 1", " 10", " 19", " 1", " 23", " 18", " 31", " 35", " 27", " 29", " 0", " 1");
+ht.add("ID", " 31", " 3", " 9", " 18", " 7", " 42", " 20", " 7", " 10", " 5", " 0", " 1");
+ht.add("IL", " 7", " 39", " 24", " 27", " 39", " 22", " 47", " 50", " 13", " 25", " 0", " 1");
+ht.add("IN", " 40", " 13", " 20", " 40", " 25", " 11", " 48" , " 8", " 30", " 32", " 0", " 1"); 
+ht.add("IA", " 12", " 8", " 7", " 3", " 17", " 4", " 9", " 21", " 1", " 16", "0", " 1"); //15
+ht.add("KS", " 21", " 34", " 34", " 30", " 42", " 12", " 16", " 46", " 16", " 30", " 0", " 1");
+ht.add("KY", " 46", " 35", " 37", " 45", " 45", " 30", " 27", " 46", " 22", " 12", " 0", " 1");
+ht.add("LA", " 43", " 50", " 48", " 47", " 44", " 50", " 42", " 48", " 44", " 48", " 0", " 1");
+ht.add("ME", " 39", " 11", " 6", " 22", " 37", " 26", " 12" ," 29", " 43", " 1", " 0", " 1");
+ht.add("MD", " 10", " 31", " 5", " 16", " 24", " 2", " 31" ," 23", " 25", " 33", " 0", " 1"); //20
+ht.add("MA", " 20", " 12", " 16", " 5", " 9", " 14", " 25" ," 40", " 45", " 14", " 0", " 1");
+ht.add("MI", " 36", " 18", " 18", " 32", " 22", " 20", " 29" ," 32", " 40", " 24", " 0", " 1");
+ht.add("MN", " 5", " 5", " 3", " 7", " 20", " 3" ," 2", " 24", " 6", " 11", " 0", " 1");
+ht.add("MS", " 42", " 46", " 47", " 50"," 48", " 49", " 6" ," 45", " 49", " 22", " 0", " 1");
+ht.add("MO", " 41", " 26", " 44", " 39", " 33", " 21", " 15" ," 10", " 20", " 42", " 0", " 1"); //25
+ht.add("MT", " 29", " 6", " 32", " 26", " 26", " 37", " 13" ," 12", " 34", " 28", " 0", " 1");
+ht.add("NE", " 4", " 15", " 17", " 27", " 21", " 13", " 14" ," 11", " 9", " 18", " 0", " 1");
+ht.add("NV", " 32", " 36", " 41", " 35", " 12", " 19", " 43" ," 38", " 5", " 45", " 0", " 1");
+ht.add("NH", " 18", " 22", " 2", " 13", " 11", " 1", " 4" ," 26", " 37", " 3", " 0", " 1");
+ht.add("NJ", " 3", " 41", " 8", " 12", " 41", " 10", " 49" ," 49", " 28", " 4", " 0", " 1"); //30
+ht.add("NM", " 34", " 45", " 39", " 31", " 46", " 44", " 8" ," 44", " 47", " 50", " 0", " 1");
+ht.add("NY", " 17", " 42", " 22", " 15", " 35", " 43", " 37" ," 28", " 19", " 13", " 0", " 1");
+ht.add("NC", " 26", " 23", " 29", " 37", " 18", " 40", " 34" ," 6", " 24", " 31", " 0", " 1");
+ht.add("ND", " 9", " 14", " 28", " 14", " 19", " 17", " 1" ," 2", " 2", " 17", " 0", " 1");
+ht.add("OH", " 38", " 38", " 25", " 36", " 32", " 25", " 40" ," 37", " 23", " 21", " 0", " 1"); //35
+ht.add("OK", " 48", " 44", " 43", " 48", " 36", " 38", " 17" ," 22", " 31", " 39", " 0", " 1");
+ht.add("OR", " 44", " 2", " 23", " 20", " 6", " 32", " 18" ," 30", " 3", " 26", " 0", " 1");
+ht.add("PA", " 28", " 37", " 14", " 23", " 34", " 16", " 44" , " 42", " 29", " 10", " 0", " 1");
+ht.add("RI", " 35", " 27", " 26", " 8", " 29", " 34", " 23" ," 33", " 48", " 8", " 0", " 1");
+ht.add("SC", " 33", " 30", " 45", " 41", " 15", " 39", " 30" ," 18", " 33", " 44", " 0", " 1"); //40
+ht.add("SD", " 6", " 16", " 12", " 21", " 28", " 24", " 5" ," 4", " 7", " 20", " 0", " 1");
+ht.add("TN", " 45", " 17", " 38", " 43", " 13", " 31", " 28" ," 5", " 15", " 46", " 0", " 1");
+ht.add("TX", " 14", " 33", " 46", " 38", " 8", " 47", " 46" ," 17", " 21", " 36", " 0", " 1");
+ht.add("UT", " 24", " 1", " 1", " 10"," 2", " 35", " 22" ," 1", " 8", " 23", " 0", " 1");
+ht.add("VT", " 19", " 20", " 4", " 6", " 31", " 6", " 27" , " 16", " 35", " 2", " 0", " 1"); //45
+ht.add("VA", " 8", " 29", " 13", " 29", " 30", " 9", " 41" , " 14", " 39", " 7", " 0", " 1");
+ht.add("WA", " 25", " 4", " 15", " 2", " 3", " 27", " 21" , " 27", " 4", " 38", " 0", " 1");
+ht.add("WV", " 49", " 48", " 31", " 44", " 49", " 23", " 45" , " 36", " 50", " 19", " 0", " 1");
+ht.add("WI", " 11", " 9", " 10", " 17", " 27", " 8", " 3", " 19", " 26", " 15", " 0", " 1");
+ht.add("WY", " 37", " 47", " 30", " 33", " 47", " 15", " 11" , " 9", " 36", " 9", " 0", " 1"); //50
+        </script>
+   		<div id= "content">
+			<div id = "States">
+				<script type="text/javascript">
+					function Apply()
+					{
+						ht.calcrank();
+						ht.sortprint();
+						
+					}
+				</script>
+				<button onclick= "Apply()"> Apply Changes </button><br />
+				
+				<script type="text/javascript">
+					function Alabama()
+					{
+						ht.changebool(1,0,12);
+						if(ht.returnbool(1,0,12) == 1)
+						{
+						document.getElementById("ALA").innerHTML = ("&#10003;");
+						}
+						else
+						{
+						document.getElementById("ALA").innerHTML = " x";
+						}
+					}
+				</script>
+				<button onclick = "Alabama()"> select </button> Alabama<small id = "ALA">&#10003;</small><br />
+				<script type="text/javascript">
+					function Alaska()
+					{
+						ht.changebool(850,0,12);
+						if(ht.returnbool(850,0,12) == 1)
+						{
+						document.getElementById("ala").innerHTML = ("&#10003;");
+						}
+						else
+						{
+						document.getElementById("ala").innerHTML = " x";
+						}
+							
+					
+					}
+				</script>
+				<button onclick = "Alaska()"> select </button> Alaska<small id = "ala">&#10003;</small><br />
+				<script type="text/javascript">
+					function Arizona()
+					{
+						ht.changebool(325,0,12);
+						if(ht.returnbool(325,0,12) == 1)
+						{
+						document.getElementById("ar").innerHTML = ("&#10003;");
+						}
+						else
+						{
+						document.getElementById("ar").innerHTML = " x";
+						}
+					}
+				</script>
+				<button onclick = "Arizona()"> select </button> Arizona<small id = "ar">&#10003;</small><br />
+				<script type="text/javascript">
+					function Arkansas()
+					{
+						ht.changebool(949,0,12);
+						if(ht.returnbool(949,0,12) == 1)
+						{
+						document.getElementById("ark").innerHTML = ("&#10003;");
+						}
+						else
+						{
+						document.getElementById("ark").innerHTML = " x";
+						}
+					}
+				</script>
+				<button onclick = "Arkansas()"> select </button> Arkansas<small id = "ark">&#10003;</small><br />
+				<script type="text/javascript">
+					function California()
+					{
+						ht.changebool(714,0,12);
+						if(ht.returnbool(714,0,12) == 1)
+						{
+						document.getElementById("ca").innerHTML = ("&#10003;");
+						}
+						else
+						{
+						document.getElementById("ca").innerHTML = " x";
+						}
+					}
+				</script>
+				<button onclick = "California()"> select </button> California <small id = "ca">&#10003;</small><br />
+				<script type="text/javascript">
+					function Colorado()
+					{
+						ht.changebool(730,0,12);
+						if(ht.returnbool(730,0,12) == 1)
+						{
+						document.getElementById("co").innerHTML = ("&#10003;");
+						}
+						else
+						{
+						document.getElementById("co").innerHTML = " x";
+						}
+					}
+				</script>				
+				<button onclick = "Colorado()"> select </button> Colorado<small id = "co">&#10003;</small><br />
+				<script type="text/javascript">
+					function Connecticut()
+					{
+						ht.changebool(545,0,12);
+						if(ht.returnbool(545,0,12) == 1)
+						{
+						document.getElementById("con").innerHTML = ("&#10003;");
+						}
+						else
+						{
+						document.getElementById("con").innerHTML = " x";
+						}
+					}
+				</script>				
+				<button onclick = "Connecticut()"> select </button> Connecticut<small id = "con">&#10003;</small><br />
+				<script type="text/javascript">
+					function Delaware()
+					{
+						ht.changebool(385,0,12);
+						if(ht.returnbool(385,0,12) == 1)
+						{
+						document.getElementById("de").innerHTML = ("&#10003;");
+						}
+						else
+						{
+						document.getElementById("de").innerHTML = " x";
+						}
+					}
+				</script>
+				<button onclick = "Delaware()"> select </button> Delaware<small id = "de">&#10003;</small><br />
+				<script type="text/javascript">
+					function Florida()
+					{
+						ht.changebool(676,0,12);
+						if(ht.returnbool(676,0,12) == 1)
+						{
+						document.getElementById("fl").innerHTML = ("&#10003;");
+						}
+						else
+						{
+						document.getElementById("fl").innerHTML = " x";
+						}
+					}
+				</script>
+				<button onclick = "Florida()"> select </button> Florida<small id = "fl">&#10003;</small><br />
+				<script type="text/javascript">
+					function Georgia()
+					{
+						ht.changebool(266,0,12);
+						if(ht.returnbool(266,0,12) == 1)
+						{
+						document.getElementById("ge").innerHTML = ("&#10003;");
+						}
+						else
+						{
+						document.getElementById("ge").innerHTML = " x";
+						}
+					}
+				</script>
+				<button onclick = "Georgia()"> select </button> Georgia<small id = "ge">&#10003;</small>
+				<script type="text/javascript">
+					function Hawaii()
+					{
+						
+						ht.changebool(513,0,12);
+						if(ht.returnbool(513,0,12) == 1)
+						{
+						document.getElementById("hi").innerHTML = ("&#10003;");
+						}
+						else
+						{
+						document.getElementById("hi").innerHTML = " x";
+						}
+					}
+				</script>
+				<br /><button onclick = "Hawaii()"> select </button> Hawaii<small id = "hi">&#10003;</small>
+				<script type="text/javascript">
+					function Idaho()
+					{
+						
+						ht.changebool(953,0,12);
+						if(ht.returnbool(953,0,12) == 1)
+						{
+						document.getElementById("id").innerHTML = ("&#10003;");
+						}
+						else
+						{
+						document.getElementById("id").innerHTML = " x";
+						}
+					}
+				</script>
+				<br /><button onclick = "Idaho()"> select </button> Idaho<small id = "id">&#10003;</small>
+				<script type="text/javascript">
+					function Illinois()
+					{
+						ht.changebool(105,0,12);
+						if(ht.returnbool(105,0,12) == 1)
+						{
+						document.getElementById("il").innerHTML = ("&#10003;");
+						}
+						else
+						{
+						document.getElementById("il").innerHTML = " x";
+						}
+					}
+				</script>
+				<br /><button onclick = "Illinois()"> select </button> Illinois<small id = "il">&#10003;</small>
+				<script type="text/javascript">
+					function Indiana()
+					{
+						ht.changebool(413,0,12);
+						if(ht.returnbool(413,0,12) == 1)
+						{
+						document.getElementById("in").innerHTML = ("&#10003;");
+						}
+						else
+						{
+						document.getElementById("in").innerHTML = " x";
+						}
+					}
+				</script>
+				<br /><button onclick = "Indiana()"> select </button> Indiana<small id = "in">&#10003;</small>
+				<script type="text/javascript">
+					function Iowa()
+					{
+						ht.changebool(554,0,12);
+						if(ht.returnbool(554,0,12) == 1)
+						{
+						document.getElementById("io").innerHTML = ("&#10003;");
+						}
+						else
+						{
+						document.getElementById("io").innerHTML = " x";
+						}
+					}
+				</script>
+				<br /><button onclick = "Iowa()"> select </button> Iowa<small id = "io">&#10003;</small>
+				<script type="text/javascript">
+					function Kansas()
+					{
+						ht.changebool(514,0,12);
+						if(ht.returnbool(514,0,12) == 1)
+						{
+						document.getElementById("ka").innerHTML = ("&#10003;");
+						}
+						else
+						{
+						document.getElementById("ka").innerHTML = " x";
+						}
+					}
+				</script>
+				<br /><button onclick = "Kansas()"> select </button> Kansas<small id = "ka">&#10003;</small>
+				<script type="text/javascript">
+					function Kentucky()
+					{
+						ht.changebool(546,0,12);
+						if(ht.returnbool(546,0,12) == 1)
+						{
+						document.getElementById("ke").innerHTML = ("&#10003;");
+						}
+						else
+						{
+						document.getElementById("ke").innerHTML = " x";
+						}
+					}
+				</script>
+				<br /><button onclick = "Kentucky()"> select </button> Kentucky<small id = "ke">&#10003;</small>
+				<script type="text/javascript">
+					function Louisiana()
+					{
+						ht.changebool(1,1,12);
+						if(ht.returnbool(1,1,12) == 1)
+						{
+						document.getElementById("lo").innerHTML = ("&#10003;");
+						}
+						else
+						{
+						document.getElementById("lo").innerHTML = " x";
+						}
+					}
+				</script>
+				<br /><button onclick = "Louisiana()"> select </button> Louisiana<small id = "lo">&#10003;</small>
+				<script type="text/javascript">
+					function Maine()
+					{
+						ht.changebool(690,0,12);
+						if(ht.returnbool(690,0,12) == 1)
+						{
+						document.getElementById("ma").innerHTML = ("&#10003;");
+						}
+						else
+						{
+						document.getElementById("ma").innerHTML = " x";
+						}
+					}
+				</script>
+				<br /><button onclick = "Maine()"> select </button> Maine<small id = "ma">&#10003;</small>
+				<script type="text/javascript">
+					function Maryland()
+					{
+						ht.changebool(553,0,12);
+						if(ht.returnbool(553,0,12) == 1)
+						{
+						document.getElementById("mar").innerHTML = ("&#10003;");
+						}
+						else
+						{
+						document.getElementById("mar").innerHTML = " x";
+						}
+					}
+				</script>
+				<br /><button onclick = "Maryland()"> select </button> Maryland<small id = "mar">&#10003;</small>
+				<script type="text/javascript">
+					function Massachusetts()
+					{
+						ht.changebool(154,0,12);
+						if(ht.returnbool(154,0,12) == 1)
+						{
+						document.getElementById("mas").innerHTML = ("&#10003;");
+						}
+						else
+						{
+						document.getElementById("mas").innerHTML = " x";
+						}
+					}
+				</script>
+				<br /><button onclick = "Massachusetts()"> select </button> Massachusetts<small id = "mas">&#10003;</small>
+				<script type="text/javascript">
+					function Michigan()
+					{
+						ht.changebool(258,0,12);
+						if(ht.returnbool(258,0,12) == 1)
+						{
+						document.getElementById("mi").innerHTML = ("&#10003;");
+						}
+						else
+						{
+						document.getElementById("mi").innerHTML = " x";
+						}
+					}
+				</script>
+				<br /><button onclick = "Michigan()"> select </button> Michigan<small id = "mi">&#10003;</small>
+				<script type="text/javascript">
+					function Minnesota()
+					{
+						ht.changebool(13,0,12);
+						if(ht.returnbool(13,0,12) == 1)
+						{
+						document.getElementById("min").innerHTML = ("&#10003;");
+						}
+						else
+						{
+						document.getElementById("min").innerHTML = " x";
+						}
+					}
+				</script>
+				<br /><button onclick = "Minnesota()"> select </button> Minnesota<small id = "min">&#10003;</small>
+				<script type="text/javascript">
+					function Mississippi()
+					{
+						ht.changebool(818,0,12);
+						if(ht.returnbool(818,0,12) == 1)
+						{
+						document.getElementById("mis").innerHTML = ("&#10003;");
+						}
+						else
+						{
+						document.getElementById("mis").innerHTML = " x";
+						}
+					}
+				</script>
+				<br /><button onclick = "Mississippi()"> select </button> Mississippi<small id = "mis">&#10003;</small>
+				<script type="text/javascript">
+					function Missouri()
+					{
+						ht.changebool(170,0,12);
+						if(ht.returnbool(170,0,12) == 1)
+						{
+						document.getElementById("miss").innerHTML = ("&#10003;");
+						}
+						else
+						{
+						document.getElementById("miss").innerHTML = " x";
+						}
+					}
+				</script>
+				<br /><button onclick = "Missouri()"> select </button> Missouri<small id = "miss">&#10003;</small>
+				<script type="text/javascript">
+					function Montana()
+					{
+						ht.changebool(985,0,12);
+						if(ht.returnbool(985,0,12) == 1)
+						{
+						document.getElementById("mo").innerHTML = ("&#10003;");
+						}
+						else
+						{
+						document.getElementById("mo").innerHTML = " x";
+						}
+					}
+				</script>
+				<br /><button onclick = "Montana()"> select </button> Montana<small id = "mo">&#10003;</small>
+				<script type="text/javascript">
+					function Nebraska()
+					{
+						ht.changebool(845,0,12);
+						if(ht.returnbool(845,0,12) == 1)
+						{
+						document.getElementById("ne").innerHTML = ("&#10003;");
+						}
+						else
+						{
+						document.getElementById("ne").innerHTML = " x";
+						}
+					}
+				</script>
+				<br /><button onclick = "Nebraska()"> select </button> Nebraska<small id = "ne">&#10003;</small>
+				<script type="text/javascript">
+					function Nevada()
+					{
+						ht.changebool(480,0,12);
+						if(ht.returnbool(480,0,12) == 1)
+						{
+						document.getElementById("nev").innerHTML = ("&#10003;");
+						}
+						else
+						{
+						document.getElementById("nev").innerHTML = " x";
+						}
+					}
+				</script>
+				<br /><button onclick = "Nevada()"> select </button> Nevada<small id = "nev">&#10003;</small>
+				<script type="text/javascript">
+					function NewHampshire()
+					{
+						ht.changebool(268,0,12);
+						if(ht.returnbool(268,0,12) == 1)
+						{
+						document.getElementById("nh").innerHTML = ("&#10003;");
+						}
+						else
+						{
+						document.getElementById("nh").innerHTML = " x";
+						}
+					}
+				</script>
+				<br /><button onclick = "NewHampshire()"> select </button> New Hampshire<small id = "nh">&#10003;</small>
+				<script type="text/javascript">
+					function NewJersey()
+					{
+						ht.changebool(560,0,12);
+						if(ht.returnbool(560,0,12) == 1)
+						{
+						document.getElementById("nj").innerHTML = ("&#10003;");
+						}
+						else
+						{
+						document.getElementById("nj").innerHTML = " x";
+						}
+					}
+				</script>
+				<br /><button onclick = "NewJersey()"> select </button> New Jersey<small id = "nj">&#10003;</small>
+				<script type="text/javascript">
+					function NewMexico()
+					{
+						ht.changebool(13,1,12);
+						if(ht.returnbool(13,1,12) == 1)
+						{
+						document.getElementById("nm").innerHTML = ("&#10003;");
+						}
+						else
+						{
+						document.getElementById("nm").innerHTML = " x";
+						}
+					}
+				</script>
+				<br /><button onclick = "NewMexico()"> select </button> New Mexico<small id = "nm">&#10003;</small>
+				<script type="text/javascript">
+					function NewYork()
+					{
+						ht.changebool(5,0,12);
+						if(ht.returnbool(5,0,12) == 1)
+						{
+						document.getElementById("ny").innerHTML = ("&#10003;");
+						}
+						else
+						{
+						document.getElementById("ny").innerHTML = " x";
+						}
+					}
+				</script>
+				<br /><button onclick = "NewYork()"> select </button> New York<small id = "ny">&#10003;</small>
+				<script type="text/javascript">
+					function NorthC()
+					{
+						ht.changebool(573,0,12);
+						if(ht.returnbool(573,0,12) == 1)
+						{
+						document.getElementById("nc").innerHTML = ("&#10003;");
+						}
+						else
+						{
+						document.getElementById("nc").innerHTML = " x";
+						}
+					}
+				</script>
+				<br /><button onclick = "NorthC()"> select </button> North Carolina<small id = "nc">&#10003;</small>
+				<script type="text/javascript">
+					function NorthD()
+					{
+						ht.changebool(708,0,12);
+						if(ht.returnbool(708,0,12) == 1)
+						{
+						document.getElementById("nd").innerHTML = ("&#10003;");
+						}
+						else
+						{
+						document.getElementById("nd").innerHTML = " x";
+						}
+					}
+				</script>
+				<br /><button onclick = "NorthD()"> select </button> North Dakota<small id = "nd">&#10003;</small>
+				<script type="text/javascript">
+					function Ohio()
+					{
+						ht.changebool(425,0,12);
+						if(ht.returnbool(425,0,12) == 1)
+						{
+						document.getElementById("oh").innerHTML = ("&#10003;");
+						}
+						else
+						{
+						document.getElementById("oh").innerHTML = " x";
+						}
+					}
+				</script>
+				<br /><button onclick = "Ohio()"> select </button> Ohio<small id = "oh">&#10003;</small>
+				<script type="text/javascript">
+					function Oklahoma()
+					{
+						ht.changebool(866,0,12);
+						if(ht.returnbool(866,0,12) == 1)
+						{
+						document.getElementById("ok").innerHTML = ("&#10003;");
+						}
+						else
+						{
+						document.getElementById("ok").innerHTML = " x";
+						}
+					}
+				</script>
+				<br /><button onclick = "Oklahoma()"> select </button> Oklahoma<small id = "ok">&#10003;</small>
+				<script type="text/javascript">
+					function Oregon()
+					{
+						ht.changebool(965,0,12);
+						if(ht.returnbool(965,0,12) == 1)
+						{
+						document.getElementById("or").innerHTML = ("&#10003;");
+						}
+						else
+						{
+						document.getElementById("or").innerHTML = " x";
+						}
+					}
+				</script>
+				<br /><button onclick = "Oregon()"> select </button> Oregon<small id = "or">&#10003;</small>
+				<script type="text/javascript">
+					function Pennsylvania()
+					{
+						ht.changebool(625,0,12);
+						if(ht.returnbool(625,0,12) == 1)
+						{
+						document.getElementById("pe").innerHTML = ("&#10003;");
+						}
+						else
+						{
+						document.getElementById("pe").innerHTML = " x";
+						}
+					}
+				</script>
+				<br /><button onclick = "Pennsylvania()"> select </button> Pennsylvania<small id = "pe">&#10003;</small>
+				<script type="text/javascript">
+					function Rhode()
+					{
+						ht.changebool(53,0,12);
+						if(ht.returnbool(53,0,12) == 1)
+						{
+						document.getElementById("ri").innerHTML = ("&#10003;");
+						}
+						else
+						{
+						document.getElementById("ri").innerHTML = " x";
+						}
+					}
+				</script>
+				<br /><button onclick = "Rhode()"> select </button> Rhode Island<small id = "ri">&#10003;</small>
+				<script type="text/javascript">
+					function SouthC()
+					{
+						ht.changebool(378,0,12);
+						if(ht.returnbool(378,0,12) == 1)
+						{
+						document.getElementById("sca").innerHTML = ("&#10003;");
+						}
+						else
+						{
+						document.getElementById("sca").innerHTML = " x";
+						}
+					}
+				</script>
+				<br /><button onclick = "SouthC()"> select </button> South Carolina<small id = "sca">&#10003;</small>
+				<script type="text/javascript">
+					function SouthD()
+					{
+						ht.changebool(513,1,12);
+						if(ht.returnbool(513,1,12) == 1)
+						{
+						document.getElementById("sd").innerHTML = ("&#10003;");
+						}
+						else
+						{
+						document.getElementById("sd").innerHTML = " x";
+						}
+					}
+				</script>
+				<br /><button onclick = "SouthD()"> select </button> South Dakota<small id = "sd">&#10003;</small>
+				<script type="text/javascript">
+					function Tennessee()
+					{
+						ht.changebool(140,0,12);
+						if(ht.returnbool(140,0,12) == 1)
+						{
+						document.getElementById("te").innerHTML = ("&#10003;");
+						}
+						else
+						{
+						document.getElementById("te").innerHTML = " x";
+						}
+					}
+				</script>
+				<br /><button onclick = "Tennessee()"> select </button> Tennessee<small id = "te">&#10003;</small>
+				<script type="text/javascript">
+					function Texas()
+					{
+						ht.changebool(800,0,12);
+						if(ht.returnbool(800,0,12) == 1)
+						{
+						document.getElementById("tex").innerHTML = ("&#10003;");
+						}
+						else
+						{
+						document.getElementById("tex").innerHTML = " x";
+						}
+					}
+				</script>
+				<br /><button onclick = "Texas()"> select </button> Texas<small id = "tex">&#10003;</small>
+				<script type="text/javascript">
+					function Utah()
+					{
+						ht.changebool(281,0,12);
+						if(ht.returnbool(281,0,12) == 1)
+						{
+						document.getElementById("u").innerHTML = ("&#10003;");
+						}
+						else
+						{
+						document.getElementById("u").innerHTML = " x";
+						}
+					}
+				</script>
+				<br /><button onclick = "Utah()"> select </button> Utah<small id = "u">&#10003;</small>
+				<script type="text/javascript">
+					function Vermont()
+					{
+						ht.changebool(621,0,12);
+						if(ht.returnbool(621,0,12) == 1)
+						{
+						document.getElementById("ver").innerHTML = ("&#10003;");
+						}
+						else
+						{
+						document.getElementById("ver").innerHTML = " x";
+						}
+					}
+				</script>
+				<br /><button onclick = "Vermont()"> select </button> Vermont<small id = "ver">&#10003;</small>
+				<script type="text/javascript">
+					function Virginia()
+					{
+						ht.changebool(452,0,12);
+						if(ht.returnbool(452,0,12) == 1)
+						{
+						document.getElementById("vir").innerHTML = ("&#10003;");
+						}
+						else
+						{
+						document.getElementById("vir").innerHTML = " x";
+						}
+					}
+				</script>
+				<br /><button onclick = "Virginia()"> select </button> Virginia<small id = "vir">&#10003;</small>
+				<script type="text/javascript">
+					function Washington()
+					{
+						ht.changebool(794,0,12);
+						if(ht.returnbool(794,0,12) == 1)
+						{
+						document.getElementById("wa").innerHTML = (" &#10003;");
+						}
+						else
+						{
+						document.getElementById("wa").innerHTML = " x";
+						}
+					}
+				</script>
+				<br /><button onclick = "Washington()"> select </button> Washington<small id = "wa">&#10003;</small>
+				<script type="text/javascript">
+					function WestV()
+					{
+						ht.changebool(965,0,12);
+						if(ht.returnbool(965,0,12) == 1)
+						{
+						document.getElementById("wv").innerHTML = ("&#10003;");
+						}
+						else
+						{
+						document.getElementById("wv").innerHTML = " x";
+						}
+					}
+				</script>
+				<br /><button onclick = "WestV()"> select </button> West Virginia<small id = "wv">&#10003;</small>
+				<script type="text/javascript">
+					function Wisonsin()
+					{
+						ht.changebool(898,0,12);
+						if(ht.returnbool(898,0,12) == 1)
+						{
+						document.getElementById("wi").innerHTML = ("&#10003;");
+						}
+						else
+						{
+						document.getElementById("wi").innerHTML = " x";
+						}
+					}
+				</script>
+				<br /><button onclick = "Wisonsin()"> select </button> Wisonsin<small id = "wi">&#10003;</small>
+				<script type="text/javascript">
+					function Wyoming()
+					{
+						ht.changebool(490,0,12);
+						if(ht.returnbool(490,0,12) == 1)
+						{
+						document.getElementById("wy").innerHTML = ("&#10003;");
+						}
+						else
+						{
+						document.getElementById("wy").innerHTML = " x";
+						}
+					}
+				</script>
+				<br /><button onclick = "Wyoming()"> select </button> Wyoming<small id = "wy">&#10003;</small>
+			</div>
+				<div id = "right">
+					<div id = "St">
+					</div>
+					<div id = "happy">
+					</div>
+					<div id = "work">
+					</div>
+					<div id = "community">
+					</div>
+					<div id = "healthCare">
+					</div>
+					<div id = "economy">
+					</div>
+					<div id = "opportunity">
+					</div>
+					<div id = "environment">
+					</div>
+					<div id = "fiscalStability">
+					</div>
+					<div id = "infrastructure">
+					</div>
+					<div id = "publicSafety">
+					</div>
+				</div>
+				<div id = "footer">
+					Data was collected from:
+					<p><a href="https://www.usnews.com/news/best-states/rankings">US News Ranks: Best States</a></p>
+					<p><a href="https://wallethub.com/edu/happiest-states/6959/">WalletHub</a></p>
+
+				</div>
+              <script language="JavaScript">
+                  
+                  //prints whole hash
+                  ht.calcrank();
+                  ht.sortprint();
+                  //prints just info of stock "KEY"
+                 //ht.printinfo("KEY");
+                  //document.write(ht.lookup("CA"));
+				</script>
+			</div>
+		
+
+	</body>
+</html>
