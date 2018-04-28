@@ -159,12 +159,12 @@
 
 		#right
 		{
- 		 float: left;
+ 		 float: right;
 		 width: 83.5%;
 		 background: white;
  		 height: 80%;
  		 overflow: auto;
- 		 padding: 0.5em;
+ 		 padding: 0em;
 		}
 		</style>
 	</head>
@@ -201,7 +201,79 @@
 </style>
 
 	<body>
+						<script type = "text/javascript">
+					var happinessmultiplier = 1;
+					var businessmultiplier = 1;
+					var environmentmultiplier = 1;
+					var infrastructuremultiplier = 1;
+					var workmultiplier =1;
 
+					function hmultup()
+					{
+						happinessmultiplier = happinessmultiplier+1;
+						document.getElementById("happinessmultiplier").innerHTML = happinessmultiplier;
+					}
+					function hmultdown()
+					{
+						if(happinessmultiplier>1)
+						{
+						happinessmultiplier = happinessmultiplier-1;
+						}
+						document.getElementById("happinessmultiplier").innerHTML = happinessmultiplier;
+					}
+					function bmultup()
+					{
+						businessmultiplier = businessmultiplier+1;
+						document.getElementById("businessmultiplier").innerHTML = businessmultiplier;
+					}
+					function bmultdown()
+					{
+						if(businessmultiplier>1)
+						{
+						businessmultiplier = businessmultiplier-1;
+						}
+						document.getElementById("businessmultiplier").innerHTML = businessmultiplier;
+					}
+					function emultup()
+					{
+						environmentmultiplier = environmentmultiplier+1;
+						document.getElementById("environmentmultiplier").innerHTML = environmentmultiplier;
+					}
+					function emultdown()
+					{
+						if(environmentmultiplier>1)
+						{
+						environmentmultiplier = environmentmultiplier-1;
+						}
+						document.getElementById("environmentmultiplier").innerHTML = environmentmultiplier;
+					}
+					function imultup()
+					{
+						infrastructuremultiplier = infrastructuremultiplier+1;
+						document.getElementById("infrastructuremultiplier").innerHTML = infrastructuremultiplier;
+					}
+					function imultdown()
+					{
+						if(infrastructuremultiplier>1)
+						{
+						infrastructuremultiplier = infrastructuremultiplier-1;
+						}
+						document.getElementById("infrastructuremultiplier").innerHTML = infrastructuremultiplier;
+					}
+					function workmultup()
+					{
+						workmultiplier = workmultiplier+1;
+						document.getElementById("workmultiplier").innerHTML = workmultiplier;
+					}
+					function workmultdown()
+					{
+						if(workmultiplier>1)
+						{
+						workmultiplier = workmultiplier-1;
+						}
+						document.getElementById("workmultiplier").innerHTML = workmultiplier;
+					}
+				</script>
 		<div id = "header">
 			<font size= "50">
 					&nbsp United States Prosperity Index
@@ -214,14 +286,16 @@
 				&nbsp&nbsp&nbspState
 			</div>
 			<div id= "Index1">
-				Happiness<br /><br/>
-				<button type= button> up </button>
-				<button type= button> down </button>
+				happiness 
+				x<small id = "happinessmultiplier">1</small>
+					<br />
+				<button onclick = "hmultup()">up</button>
+				<button onclick = "hmultdown()">down</button>
 			</div>
 			<div id= "Index2">
-				Work<br /><br/>
-				<button type= button> up </button>
-				<button type= button> down </button>
+				Work x<small id = "workmultiplier">1</small><br />
+				<button onclick = "workmultup()">up</button>
+				<button onclick = "workmultdown()">down</button>
 			</div>
 			<div id= "Index3">
 				Community<br /><br/>
